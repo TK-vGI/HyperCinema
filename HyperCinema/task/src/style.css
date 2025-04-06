@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -52,6 +52,144 @@ video {
     display: flex;
     height: 499px;
     width: 828px;
-    margin: 99px 0 0 90px;
+    margin: 99px 37px 0 90px;
     padding: 0;
+    float: left;
+}
+
+/* Movie information style */
+.movie-description {
+    display: flex;
+    flex-direction: column;
+    margin: 92px 0 0 0;
+}
+
+.movie-description-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.name {
+    height: 49px;
+    width: 122px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+}
+
+.rating {
+    height: 29px;
+    width: 44px;
+    border: 1px solid #BBB8C0;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    margin-left: 20px;
+}
+
+.sub-info {
+    height: 17px;
+    width: 124px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300    ;
+    font-size: 14px;
+    text-align: left;
+    opacity: 0.6;
+    vertical-align: top;
+    margin: 0 0 0 0;
+
+}
+
+.description {
+    height: 104px;
+    width: 394px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    opacity: 1;
+    vertical-align: top;
+    margin: 30px 0 15px 0;
+}
+
+/* Table style*/
+table {
+    table-layout: fixed;
+    border: none;
+    font-family: "Inter", "Montserrat" ,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 170px;
+    width: 350px;
+    margin: 0 0 29px 0;
+}
+
+tr {
+    height: 20px;
+}
+
+tr.empty {
+    height: 20px;
+}
+
+th {
+    width: 100px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+td {
+    width: 250px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+/* Buttons style*/
+div.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 396px;
+}
+
+#trailer-button,
+#reviews-button {
+    border: 1px solid rgb(130, 45, 180);
+    background: rgb(242, 235, 255);
+    border-radius: 8px;
+    height: 50px;
+    width: 180px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(130, 45, 180);
+    text-align: center;
+    vertical-align: top;
+    margin-top: 18px;
+}
+
+#trailer-button:hover,
+#reviews-button:hover {
+    border: 1px solid rgb(130, 45, 180);
+    background: rgb(130, 45, 180);
+    color: rgb(242, 235, 255);
+
 }

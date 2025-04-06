@@ -1,18 +1,60 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>HyperCinema</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HyperCinema</title>
 </head>
 <body>
 <div>
-  <h1 id="main-title">Hyper Cinema</h1>
-  <button id="login-button">Login</button>
+    <h1 id="main-title">Hyper Cinema</h1>
+    <input id="login-button" type="button" value="Login">
 </div>
-<video src="video.mpeg" alt="Ogre Shrek and princess Fionna sitting and holding hands in the forest at sunset "
+
+<video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Big_Buck_Bunny_4K.webm/Big_Buck_Bunny_4K.webm.720p.vp9.webm"
+       alt="Ogre Shrek and princess Fionna sitting and holding hands in the forest at sunset "
        width="828" height="499"
-       controls poster="video.svg"></video>
+       controls poster="video.svg">
+</video>
+
+<div class="movie-description">
+    <div class="movie-description-header">
+        <h2 class="name">Shrek</h2>
+        <p class="rating">6+</p>
+    </div>
+    <p class="sub-info">2001, USA, 1h 30m</p>
+    <p class="description">
+        A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go
+        on a quest and rescue a princess for the lord in order to get his land back.
+    </p>
+    <table>
+        <tbody>
+        <tr>
+            <th>Directors</th>
+            <td>Andrew Adamson, Vicky Jenson</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>Genres</th>
+            <td>Animation, Adventure, Comedy</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>IMDB</th>
+            <td>7.9</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>Rotten Tomatoes</th>
+            <td>88</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="buttons">
+        <button id="trailer-button">Trailer</button>
+        <button id="reviews-button">Reviews</button>
+    </div>
+</div>
 </body>
 </html>
