@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     background: #F2EBFF;
-    height: 740px;
+    height: 1200px;
     width: 1440px;
     margin: 0;
+    /* border: 1px solid #000000;*/
 }
 
 div {
@@ -99,7 +101,7 @@ video {
     height: 17px;
     width: 124px;
     font-family: "Inter", sans-serif;
-    font-weight: 300    ;
+    font-weight: 300;
     font-size: 14px;
     text-align: left;
     opacity: 0.6;
@@ -125,7 +127,7 @@ video {
 table {
     table-layout: fixed;
     border: none;
-    font-family: "Inter", "Montserrat" ,sans-serif;
+    font-family: "Inter", "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 400;
     height: 170px;
@@ -193,3 +195,172 @@ div.buttons {
     color: rgb(242, 235, 255);
 
 }
+
+/* Actors section style*/
+section#actors {
+    margin: 170px 0 84px 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    display: block;
+    height: 39px;
+    width: 109px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+div#actors-list {
+    display: flex;
+    flex-direction: row;
+    height: 251px;
+    width: 1259px;
+    /*margin: 0 0 0 90px;*/
+    border: none;
+}
+
+article {
+    background: #F2EBFF;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 251px;
+    width: 149px;
+}
+
+article img {
+    width: 147px;
+    height: 209px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+article div {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    justify-self: end;
+    align-self: start;
+    height: 18px;
+    width: max-content;
+    margin: 9px 0 13px 10px;
+
+}
+
+/* Reviews section style*/
+#reviews-section {
+    position: absolute;
+    top: 1348px;
+    left: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+p#reviews.section-header {
+    position: absolute;
+    top: 1269px;
+    left: 90px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+#reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+
+    width: 936px;
+    border-radius: 10px;
+    height: fit-content;
+
+    padding: 40px 40px 60px 40px;
+    border: 1px solid black;
+
+    /* needed to set review rating to absolute position */
+    position: relative;
+}
+
+.date {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    opacity: .6;
+    line-height: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.review h1 {
+    display: inline-flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0;
+    margin: 32px 0 20px 0;
+}
+
+.review p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.grade {
+    position: absolute;
+    top: -10px;
+    right: 40px;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    width: 72px;
+    height: 93px;
+    background-size: contain;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.grade span.innerText {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.grade span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.grade.positive {
+    background-image: url("/positive-review.png");
+}
+
+.grade.negative {
+    background-image: url("/negative-review.png");
+}
+

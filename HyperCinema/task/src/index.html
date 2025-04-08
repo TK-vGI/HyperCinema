@@ -7,15 +7,19 @@
     <title>HyperCinema</title>
 </head>
 <body>
+<!-- Header -->
 <div>
     <h1 id="main-title">Hyper Cinema</h1>
     <input id="login-button" type="button" value="Login">
 </div>
+<!-- Video section and ... -->
 <video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Big_Buck_Bunny_4K.webm/Big_Buck_Bunny_4K.webm.720p.vp9.webm"
        alt="Ogre Shrek and princess Fionna sitting and holding hands in the forest at sunset "
        width="828" height="499"
-       controls poster="video.svg">
+       controls="controls"
+       poster="video.svg">
 </video>
+<!-- ... movie description -->
 <div class="movie-description">
     <div class="movie-description-header">
         <h2 class="name">Shrek</h2>
@@ -51,50 +55,103 @@
     </table>
     <div class="buttons">
         <button id="trailer-button">Trailer</button>
-        <button id="reviews-button">Reviews</button>
+        <button id="reviews-button" onclick="window.location.href='#reviews'">Reviews</button>
     </div>
 </div>
-
+<!-- Actors section -->
 <section id="actors">
     <h3 class="section-header">Actors</h3>
     <div id="actors-list">
-        <article>
+        <article class="actor">
             <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcS2y8p9O466gUqXpbGVZFP3M4yi4lrxT7mhqFdOUMDBvJt_obA0BU_TyPnexzBRgudQaPrHU18&s=19"
                  alt="photograph of the actor Mike Myers"/>
             <div>Mike Myers</div>
         </article>
-        <article>
+        <article class="actor">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdGUMeuPFXxDFzmwZulRf2mKWSj6RC7o-hg07GWKeFqtYV77uJsk7LZe4&s=10"
                  alt="photograph of the actor Eddie Murphy"/>
             <div>Eddie Murphy</div>
         </article>
-        <article>
+        <article class="actor">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrsky-gU4BVxDxSUB8nmQ-oiZOiwem-xzuTRwUtjVwSsXz1cGGm4CpjGg&s=10"
                  alt="photograph of the actor Cameron Diaz"/>
             <div>Cameron Diaz</div>
         </article>
-        <article>
+        <article class="actor">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVOgtNGqwa3LfUrge_oiHa01pnUzoYRvoPP6vSsBytlbdmpvh_MC8tKg&s=10"
                  alt="photograph of the actor John Lithgow"/>
             <div>John Lithgow</div>
         </article>
-        <article>
+        <article class="actor">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR388m5HRhXBT5_sM-1HiJGF4uqECsp5948Vj96NPnoRyTPjZcN_HDwjw&s=10"
                  alt="photograph of the actor Vincent Cassel"/>
             <div>Vincent Cassel</div>
         </article>
-        <article>
+        <article class="actor">
             <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Andrew_Adamson_%28cropped%29.jpg"
                  alt="photograph of the actor Andrew Adamson"/>
             <div>Andrew Adamson</div>
         </article>
-        <article>
+        <article class="actor">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Elisa_Gabrielli_by_Gage_Skidmore.jpg/220px-Elisa_Gabrielli_by_Gage_Skidmore.jpg"
                  alt="photograph of the actor Elisa Gabrielli"/>
             <div>Elisa Gabrielli</div>
         </article>
     </div>
 </section>
+<!-- Reviews section -->
+<p id="reviews" class="section-header">Reviews</p>
+<section class="reviews-section" id="reviews-section">
+    <section class="reviews-list" id="reviews-list">
+        <article class="review">
+            <div class="grade positive">9<span>/10</span></div>
+            <span class="date">21 June 2020</span>
+            <h1>Groundbreaking</h1>
+            <p>
+                For younger viewers, they might not understand the impact of "Shrek" on the film industry and CGI
+                movies.
+                However, being an older guy, I remember how groundbreaking and amazing the computer animation was when
+                the film debuted. It was head and shoulders better than the few CGI movies that had come out in the
+                previous decade...and it finally gave Pixar a serious run for the money. In addition, the plot was very
+                adult...and the film's appeal was much greater than a typical CGI story. Great animation, great story
+                telling and great voice acting, while the movie isn't quite impressive to see today, it still holds up
+                very well and is well worth your time.<br>
+                I could easily say more but this film has over a thousand reviews....so I'll just end it here!
+            </p>
+        </article>
 
+        <article class="review">
+            <div class="grade negative">3<span>/10</span></div>
+            <span class="date">11 May 2021</span>
+            <h1>Not the best movie, also scared some kids</h1>
+            <p>
+                My 3-year-old and my 8-year-old (both sons) and my 12-year-old (daughter) were terrified. True it
+                didn’t show any scary fights or other things. My daughter was fine but she found disturbing memes.
+                My sons found that the scene where shrek hits somebody with a sword while knighting them gave my kids
+                nightmares. I recommend just depends on what the parent thinks.
+                I would say watch it with your kids the first few times. Also, not for young kids because they will
+                have nightmares.
+            </p>
+        </article>
+
+        <article class="review">
+            <div class="grade positive">8<span>/10</span></div>
+            <span class="date">11 May 2009</span>
+            <h1>Original and funny: delightful for kids and adults alike!</h1>
+            <p>
+                I liked the incidental music very much, especially in the escape from the Dragon scene. I wasn't
+                hugely fond of the pop music featured, but putting that minor quibble aside, this was still an original
+                and funny animated film, that will please any animation lover. The animation is faultless, never stiff,
+                and lovely backgrounds. The script is laugh-out-loud funny with the fairytale characters, Gingerbread
+                Man especially, and Robin Hood. The characters are definitely memorable, and the terrific voice cast
+                brings the film to life. Mike Myers voices the ogre with feeling, but it is Eddie Murphy who steals
+                the film. Though Cameron Diaz is lovely as Fiona, and John Lithgow is delightfully villainous
+                as Lord Farquad, though his villain isn't the most memorable villain ever in an animation. The film
+                sparkles with heart and humour, it is impossible not to like it. In conclusion, look out for it,
+                you'll be glad you did! 8/10 Bethany Cox.
+            </p>
+        </article>
+    </section>
+</section>
 </body>
 </html>
