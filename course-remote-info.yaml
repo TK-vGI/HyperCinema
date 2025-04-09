@@ -1,0 +1,148 @@
+hyperskill_project:
+  id: 291
+  ide_files: https://hyperskill.org/api/projects/291/additional-files/additional_files.json
+  is_template_based: false
+  use_ide: true
+update_date: "Wed, 09 Apr 2025 15:56:13 UTC"
+stages:
+  - id: 1524
+    step: 22773
+    is_completed: true
+  - id: 1525
+    step: 22774
+    is_completed: true
+  - id: 1526
+    step: 22775
+    is_completed: true
+  - id: 1527
+    step: 22776
+    is_completed: true
+  - id: 1528
+    step: 22777
+    is_completed: true
+topics:
+  0:
+    - title: Introduction to UI/UX
+      theory_id: 14603
+    - title: Layout grids
+      theory_id: 14922
+    - title: Interface elements
+      theory_id: 15253
+    - title: Fonts
+      theory_id: 15045
+    - title: Colors
+      theory_id: 14914
+    - title: World Wide Web
+      theory_id: 6633
+    - title: Block-level elements
+      theory_id: 7271
+    - title: Inline elements
+      theory_id: 7518
+    - title: DOM
+      theory_id: 8635
+    - title: What is CSS
+      theory_id: 7678
+    - title: HTML attributes id and class
+      theory_id: 7527
+    - title: Connecting CSS to HTML
+      theory_id: 7418
+    - title: Basic syntax
+      theory_id: 7722
+    - title: CSS Selectors
+      theory_id: 7738
+    - title: Relative units
+      theory_id: 10671
+    - title: Absolute units
+      theory_id: 10605
+    - title: Comments in CSS
+      theory_id: 7730
+    - title: Layout elements
+      theory_id: 13326
+    - title: Images
+      theory_id: 9237
+    - title: Video
+      theory_id: 16637
+    - title: The HTML SEO optimization
+      theory_id: 21889
+    - title: Introduction to Figma
+      theory_id: 26881
+    - title: HTML Basics
+      theory_id: 47192
+    - title: Tags and Attributes
+      theory_id: 7536
+    - title: HTML page structure
+      theory_id: 6491
+    - title: Comments in HTML
+      theory_id: 7502
+    - title: Position
+      theory_id: 11581
+    - title: Float
+      theory_id: 12697
+    - title: Margin and Padding
+      theory_id: 26903
+    - title: Width and Height
+      theory_id: 8325
+    - title: Google Fonts
+      theory_id: 7844
+    - title: Using Fonts
+      theory_id: 15189
+    - title: Border
+      theory_id: 8355
+    - title: RGB
+      theory_id: 8819
+    - title: Links
+      theory_id: 11834
+    - title: Opacity
+      theory_id: 11169
+    - title: Colors in CSS
+      theory_id: 7973
+    - title: Background
+      theory_id: 11670
+    - title: "Headings, Paragraphs, Comments"
+      theory_id: 21203
+  1:
+    - title: Intro to HTML forms
+      theory_id: 6560
+    - title: Pseudo-classes
+      theory_id: 9762
+    - title: Pseudo-elements
+      theory_id: 14388
+    - title: Attribute selectors and Universal selector
+      theory_id: 12228
+    - title: Combinators
+      theory_id: 12236
+    - title: line-height
+      theory_id: 11153
+    - title: Intro to Tables
+      theory_id: 10832
+    - title: Intro to Lists
+      theory_id: 8178
+    - title: Text Alignment
+      theory_id: 11589
+    - title: Display
+      theory_id: 21211
+  2:
+    - title: Introduction to Flexbox
+      theory_id: 11760
+    - title: Orientation and Display order
+      theory_id: 11768
+    - title: "Flexibility, growth and contraction ratio"
+      theory_id: 18859
+    - title: Axis alignment
+      theory_id: 11784
+    - title: Clear
+      theory_id: 12705
+  3:
+    - title: Positioning properties
+      theory_id: 8204
+  4:
+    - title: Introduction to Animation
+      theory_id: 10287
+    - title: Transform
+      theory_id: 12204
+    - title: Backface-visibility
+      theory_id: 12219
+    - title: Transitions
+      theory_id: 13593
+    - title: Box-Shadow
+      theory_id: 10680

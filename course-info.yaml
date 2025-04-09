@@ -1,0 +1,13 @@
+type: hyperskill
+title: HyperCinema
+language: English
+summary: "<p>Most movie and series fans cannot imagine their life without their object\
+  \ of passion. Almost all sites with videos led to YouTube, but now every online\
+  \ cinema has its player on the website. How about creating your simple version of\
+  \ an online cinema?</p><br/><br/>Learn more at <a href=\"https://hyperskill.org/projects/291?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=project-card\"\
+  >https://hyperskill.org/projects/291</a>"
+programming_language: JavaScript
+content:
+  - HyperCinema
+mode: Study
+yaml_version: 2

@@ -1,0 +1,1850 @@
+/* Stage 1
+HTML: index.html
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HyperCinema</title>
+</head>
+<body>
+<div>
+  <h1 id="main-title">Hyper Cinema</h1>
+  <button id="login-button">Login</button>
+</div>
+<video src="video.mpeg" alt="Ogre Shrek and princess Fionna sitting and holding hands in the forest at sunset "
+       width="828" height="499"
+       controls poster="video.svg"></video>
+</body>
+</html>
+
+CSS: style.css
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F2EBFF;
+    height: 740px;
+    width: 1440px;
+    margin: 0;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#main-title {
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    height: 22px;
+    width: 123px;
+    margin: 20px 0 0 90px;
+    padding: 0;
+}
+
+#login-button {
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 22px;
+    opacity: 0.8;
+    width: 43px;
+    margin: 20px 90px 0 0;
+    padding: 0;
+}
+
+video {
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    height: 499px;
+    width: 828px;
+    margin: 99px 0 0 90px;
+    padding: 0;
+}
+
+End of Stage 1 */
+
+
+/* Stage 2
+HTML: index.html
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HyperCinema</title>
+</head>
+<body>
+<div>
+    <h1 id="main-title">Hyper Cinema</h1>
+    <input id="login-button" type="button" value="Login">
+</div>
+
+<video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Big_Buck_Bunny_4K.webm/Big_Buck_Bunny_4K.webm.720p.vp9.webm"
+       alt="Ogre Shrek and princess Fionna sitting and holding hands in the forest at sunset "
+       width="828" height="499"
+       controls poster="video.svg">
+</video>
+
+<div class="movie-description">
+    <div class="movie-description-header">
+        <h2 class="name">Shrek</h2>
+        <p class="rating">6+</p>
+    </div>
+    <p class="sub-info">2001, USA, 1h 30m</p>
+    <p class="description">
+        A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go
+        on a quest and rescue a princess for the lord in order to get his land back.
+    </p>
+    <table>
+        <tbody>
+        <tr>
+            <th>Directors</th>
+            <td>Andrew Adamson, Vicky Jenson</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>Genres</th>
+            <td>Animation, Adventure, Comedy</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>IMDB</th>
+            <td>7.9</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>Rotten Tomatoes</th>
+            <td>88</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="buttons">
+        <button id="trailer-button">Trailer</button>
+        <button id="reviews-button">Reviews</button>
+    </div>
+</div>
+</body>
+</html>
+
+CSS: style.css
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F2EBFF;
+    height: 740px;
+    width: 1440px;
+    margin: 0;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#main-title {
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    height: 22px;
+    width: 123px;
+    margin: 20px 0 0 90px;
+    padding: 0;
+}
+
+#login-button {
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 22px;
+    opacity: 0.8;
+    width: 43px;
+    margin: 20px 90px 0 0;
+    padding: 0;
+}
+
+video {
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    height: 499px;
+    width: 828px;
+    margin: 99px 37px 0 90px;
+    padding: 0;
+    float: left;
+}
+
+/* Movie information style */
+.movie-description {
+    display: flex;
+    flex-direction: column;
+    margin: 92px 0 0 0;
+}
+
+.movie-description-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.name {
+    height: 49px;
+    width: 122px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+}
+
+.rating {
+    height: 29px;
+    width: 44px;
+    border: 1px solid #BBB8C0;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    margin-left: 20px;
+}
+
+.sub-info {
+    height: 17px;
+    width: 124px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300    ;
+    font-size: 14px;
+    text-align: left;
+    opacity: 0.6;
+    vertical-align: top;
+    margin: 0 0 0 0;
+
+}
+
+.description {
+    height: 104px;
+    width: 394px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    opacity: 1;
+    vertical-align: top;
+    margin: 30px 0 15px 0;
+}
+
+/* Table style*/
+table {
+    table-layout: fixed;
+    border: none;
+    font-family: "Inter", "Montserrat" ,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 170px;
+    width: 350px;
+    margin: 0 0 29px 0;
+}
+
+tr {
+    height: 20px;
+}
+
+tr.empty {
+    height: 20px;
+}
+
+th {
+    width: 100px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+td {
+    width: 250px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+/* Buttons style*/
+div.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 396px;
+}
+
+#trailer-button,
+#reviews-button {
+    border: 1px solid rgb(130, 45, 180);
+    background: rgb(242, 235, 255);
+    border-radius: 8px;
+    height: 50px;
+    width: 180px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(130, 45, 180);
+    text-align: center;
+    vertical-align: top;
+    margin-top: 18px;
+}
+
+#trailer-button:hover,
+#reviews-button:hover {
+    border: 1px solid rgb(130, 45, 180);
+    background: rgb(130, 45, 180);
+    color: rgb(242, 235, 255);
+
+}
+
+End of Stage 2 */
+
+
+/* Stage 3
+HTML: index.html
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HyperCinema</title>
+</head>
+<body>
+<div>
+    <h1 id="main-title">Hyper Cinema</h1>
+    <input id="login-button" type="button" value="Login">
+</div>
+<video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Big_Buck_Bunny_4K.webm/Big_Buck_Bunny_4K.webm.720p.vp9.webm"
+       alt="Ogre Shrek and princess Fionna sitting and holding hands in the forest at sunset "
+       width="828" height="499"
+       controls poster="video.svg">
+</video>
+<div class="movie-description">
+    <div class="movie-description-header">
+        <h2 class="name">Shrek</h2>
+        <p class="rating">6+</p>
+    </div>
+    <p class="sub-info">2001, USA, 1h 30m</p>
+    <p class="description">
+        A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go
+        on a quest and rescue a princess for the lord in order to get his land back.
+    </p>
+    <table>
+        <tbody>
+        <tr>
+            <th>Directors</th>
+            <td>Andrew Adamson, Vicky Jenson</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>Genres</th>
+            <td>Animation, Adventure, Comedy</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>IMDB</th>
+            <td>7.9</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>Rotten Tomatoes</th>
+            <td>88</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="buttons">
+        <button id="trailer-button">Trailer</button>
+        <button id="reviews-button">Reviews</button>
+    </div>
+</div>
+
+<section id="actors">
+    <h3 class="section-header">Actors</h3>
+    <div id="actors-list">
+        <article>
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcS2y8p9O466gUqXpbGVZFP3M4yi4lrxT7mhqFdOUMDBvJt_obA0BU_TyPnexzBRgudQaPrHU18&s=19"
+                 alt="photograph of the actor Mike Myers"/>
+            <div>Mike Myers</div>
+        </article>
+        <article>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdGUMeuPFXxDFzmwZulRf2mKWSj6RC7o-hg07GWKeFqtYV77uJsk7LZe4&s=10"
+                 alt="photograph of the actor Eddie Murphy"/>
+            <div>Eddie Murphy</div>
+        </article>
+        <article>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrsky-gU4BVxDxSUB8nmQ-oiZOiwem-xzuTRwUtjVwSsXz1cGGm4CpjGg&s=10"
+                 alt="photograph of the actor Cameron Diaz"/>
+            <div>Cameron Diaz</div>
+        </article>
+        <article>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVOgtNGqwa3LfUrge_oiHa01pnUzoYRvoPP6vSsBytlbdmpvh_MC8tKg&s=10"
+                 alt="photograph of the actor John Lithgow"/>
+            <div>John Lithgow</div>
+        </article>
+        <article>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR388m5HRhXBT5_sM-1HiJGF4uqECsp5948Vj96NPnoRyTPjZcN_HDwjw&s=10"
+                 alt="photograph of the actor Vincent Cassel"/>
+            <div>Vincent Cassel</div>
+        </article>
+        <article>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Andrew_Adamson_%28cropped%29.jpg"
+                 alt="photograph of the actor Andrew Adamson"/>
+            <div>Andrew Adamson</div>
+        </article>
+        <article>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Elisa_Gabrielli_by_Gage_Skidmore.jpg/220px-Elisa_Gabrielli_by_Gage_Skidmore.jpg"
+                 alt="photograph of the actor Elisa Gabrielli"/>
+            <div>Elisa Gabrielli</div>
+        </article>
+    </div>
+</section>
+
+</body>
+</html>
+
+CSS: style.css
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F2EBFF;
+    height: 1200px;
+    width: 1440px;
+    margin: 0;
+   /* border: 1px solid #000000;*/
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#main-title {
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    height: 22px;
+    width: 123px;
+    margin: 20px 0 0 90px;
+    padding: 0;
+}
+
+#login-button {
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 22px;
+    opacity: 0.8;
+    width: 43px;
+    margin: 20px 90px 0 0;
+    padding: 0;
+}
+
+video {
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    height: 499px;
+    width: 828px;
+    margin: 99px 37px 0 90px;
+    padding: 0;
+    float: left;
+}
+
+/* Movie information style */
+.movie-description {
+    display: flex;
+    flex-direction: column;
+    margin: 92px 0 0 0;
+}
+
+.movie-description-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.name {
+    height: 49px;
+    width: 122px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+}
+
+.rating {
+    height: 29px;
+    width: 44px;
+    border: 1px solid #BBB8C0;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    margin-left: 20px;
+}
+
+.sub-info {
+    height: 17px;
+    width: 124px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300    ;
+    font-size: 14px;
+    text-align: left;
+    opacity: 0.6;
+    vertical-align: top;
+    margin: 0 0 0 0;
+
+}
+
+.description {
+    height: 104px;
+    width: 394px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    opacity: 1;
+    vertical-align: top;
+    margin: 30px 0 15px 0;
+}
+
+/* Table style*/
+table {
+    table-layout: fixed;
+    border: none;
+    font-family: "Inter", "Montserrat" ,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 170px;
+    width: 350px;
+    margin: 0 0 29px 0;
+}
+
+tr {
+    height: 20px;
+}
+
+tr.empty {
+    height: 20px;
+}
+
+th {
+    width: 100px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+td {
+    width: 250px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+/* Buttons style*/
+div.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 396px;
+}
+
+#trailer-button,
+#reviews-button {
+    border: 1px solid rgb(130, 45, 180);
+    background: rgb(242, 235, 255);
+    border-radius: 8px;
+    height: 50px;
+    width: 180px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(130, 45, 180);
+    text-align: center;
+    vertical-align: top;
+    margin-top: 18px;
+}
+
+#trailer-button:hover,
+#reviews-button:hover {
+    border: 1px solid rgb(130, 45, 180);
+    background: rgb(130, 45, 180);
+    color: rgb(242, 235, 255);
+
+}
+
+/* Actors section style*/
+section#actors {
+    margin: 170px 0 84px 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    display: block;
+    height: 39px;
+    width: 109px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+div#actors-list {
+    display: flex;
+    flex-direction: row;
+    height: 251px;
+    width: 1259px;
+    /*margin: 0 0 0 90px;*/
+    border: none;
+}
+
+article {
+    background: #F2EBFF;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 251px;
+    width: 149px;
+}
+
+article img {
+    width: 147px;
+    height: 209px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+article div {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    justify-self: end;
+    align-self: start;
+    height: 18px;
+    width: max-content;
+    margin: 9px 0 13px 10px;
+}
+
+End of Stage 3 */
+
+
+/* Stage 4
+HTML: index.html
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HyperCinema</title>
+</head>
+<body>
+<!-- Header -->
+<div>
+    <h1 id="main-title">Hyper Cinema</h1>
+    <input id="login-button" type="button" value="Login">
+</div>
+<!-- Video section and ... -->
+<video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Big_Buck_Bunny_4K.webm/Big_Buck_Bunny_4K.webm.720p.vp9.webm"
+       alt="Ogre Shrek and princess Fionna sitting and holding hands in the forest at sunset "
+       width="828" height="499"
+       controls="controls"
+       poster="video.svg">
+</video>
+<!-- ... movie description -->
+<div class="movie-description">
+    <div class="movie-description-header">
+        <h2 class="name">Shrek</h2>
+        <p class="rating">6+</p>
+    </div>
+    <p class="sub-info">2001, USA, 1h 30m</p>
+    <p class="description">
+        A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go
+        on a quest and rescue a princess for the lord in order to get his land back.
+    </p>
+    <table>
+        <tbody>
+        <tr>
+            <th>Directors</th>
+            <td>Andrew Adamson, Vicky Jenson</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>Genres</th>
+            <td>Animation, Adventure, Comedy</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>IMDB</th>
+            <td>7.9</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>Rotten Tomatoes</th>
+            <td>88</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="buttons">
+        <button id="trailer-button">Trailer</button>
+        <button id="reviews-button" onclick="window.location.href='#reviews'">Reviews</button>
+    </div>
+</div>
+<!-- Actors section -->
+<section id="actors">
+    <h3 class="section-header">Actors</h3>
+    <div id="actors-list">
+        <article class="actor">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcS2y8p9O466gUqXpbGVZFP3M4yi4lrxT7mhqFdOUMDBvJt_obA0BU_TyPnexzBRgudQaPrHU18&s=19"
+                 alt="photograph of the actor Mike Myers"/>
+            <div>Mike Myers</div>
+        </article>
+        <article class="actor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdGUMeuPFXxDFzmwZulRf2mKWSj6RC7o-hg07GWKeFqtYV77uJsk7LZe4&s=10"
+                 alt="photograph of the actor Eddie Murphy"/>
+            <div>Eddie Murphy</div>
+        </article>
+        <article class="actor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrsky-gU4BVxDxSUB8nmQ-oiZOiwem-xzuTRwUtjVwSsXz1cGGm4CpjGg&s=10"
+                 alt="photograph of the actor Cameron Diaz"/>
+            <div>Cameron Diaz</div>
+        </article>
+        <article class="actor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVOgtNGqwa3LfUrge_oiHa01pnUzoYRvoPP6vSsBytlbdmpvh_MC8tKg&s=10"
+                 alt="photograph of the actor John Lithgow"/>
+            <div>John Lithgow</div>
+        </article>
+        <article class="actor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR388m5HRhXBT5_sM-1HiJGF4uqECsp5948Vj96NPnoRyTPjZcN_HDwjw&s=10"
+                 alt="photograph of the actor Vincent Cassel"/>
+            <div>Vincent Cassel</div>
+        </article>
+        <article class="actor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Andrew_Adamson_%28cropped%29.jpg"
+                 alt="photograph of the actor Andrew Adamson"/>
+            <div>Andrew Adamson</div>
+        </article>
+        <article class="actor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Elisa_Gabrielli_by_Gage_Skidmore.jpg/220px-Elisa_Gabrielli_by_Gage_Skidmore.jpg"
+                 alt="photograph of the actor Elisa Gabrielli"/>
+            <div>Elisa Gabrielli</div>
+        </article>
+    </div>
+</section>
+<!-- Reviews section -->
+<p id="reviews" class="section-header">Reviews</p>
+<section class="reviews-section" id="reviews-section">
+    <section class="reviews-list" id="reviews-list">
+        <article class="review">
+            <div class="grade positive">9<span>/10</span></div>
+            <span class="date">21 June 2020</span>
+            <h1>Groundbreaking</h1>
+            <p>
+                For younger viewers, they might not understand the impact of "Shrek" on the film industry and CGI
+                movies.
+                However, being an older guy, I remember how groundbreaking and amazing the computer animation was when
+                the film debuted. It was head and shoulders better than the few CGI movies that had come out in the
+                previous decade...and it finally gave Pixar a serious run for the money. In addition, the plot was very
+                adult...and the film's appeal was much greater than a typical CGI story. Great animation, great story
+                telling and great voice acting, while the movie isn't quite impressive to see today, it still holds up
+                very well and is well worth your time.<br>
+                I could easily say more but this film has over a thousand reviews....so I'll just end it here!
+            </p>
+        </article>
+
+        <article class="review">
+            <div class="grade negative">3<span>/10</span></div>
+            <span class="date">11 May 2021</span>
+            <h1>Not the best movie, also scared some kids</h1>
+            <p>
+                My 3-year-old and my 8-year-old (both sons) and my 12-year-old (daughter) were terrified. True it
+                didn’t show any scary fights or other things. My daughter was fine but she found disturbing memes.
+                My sons found that the scene where shrek hits somebody with a sword while knighting them gave my kids
+                nightmares. I recommend just depends on what the parent thinks.
+                I would say watch it with your kids the first few times. Also, not for young kids because they will
+                have nightmares.
+            </p>
+        </article>
+
+        <article class="review">
+            <div class="grade positive">8<span>/10</span></div>
+            <span class="date">11 May 2009</span>
+            <h1>Original and funny: delightful for kids and adults alike!</h1>
+            <p>
+                I liked the incidental music very much, especially in the escape from the Dragon scene. I wasn't
+                hugely fond of the pop music featured, but putting that minor quibble aside, this was still an original
+                and funny animated film, that will please any animation lover. The animation is faultless, never stiff,
+                and lovely backgrounds. The script is laugh-out-loud funny with the fairytale characters, Gingerbread
+                Man especially, and Robin Hood. The characters are definitely memorable, and the terrific voice cast
+                brings the film to life. Mike Myers voices the ogre with feeling, but it is Eddie Murphy who steals
+                the film. Though Cameron Diaz is lovely as Fiona, and John Lithgow is delightfully villainous
+                as Lord Farquad, though his villain isn't the most memorable villain ever in an animation. The film
+                sparkles with heart and humour, it is impossible not to like it. In conclusion, look out for it,
+                you'll be glad you did! 8/10 Bethany Cox.
+            </p>
+        </article>
+    </section>
+</section>
+</body>
+</html>
+
+CSS: style.css
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F2EBFF;
+    height: 1200px;
+    width: 1440px;
+    margin: 0;
+    /* border: 1px solid #000000;*/
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#main-title {
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    height: 22px;
+    width: 123px;
+    margin: 20px 0 0 90px;
+    padding: 0;
+}
+
+#login-button {
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 22px;
+    opacity: 0.8;
+    width: 43px;
+    margin: 20px 90px 0 0;
+    padding: 0;
+}
+
+video {
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    height: 499px;
+    width: 828px;
+    margin: 99px 37px 0 90px;
+    padding: 0;
+    float: left;
+}
+
+/* Movie information style */
+.movie-description {
+    display: flex;
+    flex-direction: column;
+    margin: 92px 0 0 0;
+}
+
+.movie-description-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.name {
+    height: 49px;
+    width: 122px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+}
+
+.rating {
+    height: 29px;
+    width: 44px;
+    border: 1px solid #BBB8C0;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    margin-left: 20px;
+}
+
+.sub-info {
+    height: 17px;
+    width: 124px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: left;
+    opacity: 0.6;
+    vertical-align: top;
+    margin: 0 0 0 0;
+
+}
+
+.description {
+    height: 104px;
+    width: 394px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    opacity: 1;
+    vertical-align: top;
+    margin: 30px 0 15px 0;
+}
+
+/* Table style*/
+table {
+    table-layout: fixed;
+    border: none;
+    font-family: "Inter", "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 170px;
+    width: 350px;
+    margin: 0 0 29px 0;
+}
+
+tr {
+    height: 20px;
+}
+
+tr.empty {
+    height: 20px;
+}
+
+th {
+    width: 100px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+td {
+    width: 250px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+/* Buttons style*/
+div.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 396px;
+}
+
+#trailer-button,
+#reviews-button {
+    border: 1px solid rgb(130, 45, 180);
+    background: rgb(242, 235, 255);
+    border-radius: 8px;
+    height: 50px;
+    width: 180px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(130, 45, 180);
+    text-align: center;
+    vertical-align: top;
+    margin-top: 18px;
+}
+
+#trailer-button:hover,
+#reviews-button:hover {
+    border: 1px solid rgb(130, 45, 180);
+    background: rgb(130, 45, 180);
+    color: rgb(242, 235, 255);
+
+}
+
+/* Actors section style*/
+section#actors {
+    margin: 170px 0 84px 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    display: block;
+    height: 39px;
+    width: 109px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+div#actors-list {
+    display: flex;
+    flex-direction: row;
+    height: 251px;
+    width: 1259px;
+    /*margin: 0 0 0 90px;*/
+    border: none;
+}
+
+article {
+    background: #F2EBFF;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 251px;
+    width: 149px;
+}
+
+article img {
+    width: 147px;
+    height: 209px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+article div {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    justify-self: end;
+    align-self: start;
+    height: 18px;
+    width: max-content;
+    margin: 9px 0 13px 10px;
+
+}
+
+/* Reviews section style*/
+#reviews-section {
+    position: absolute;
+    top: 1348px;
+    left: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+p#reviews.section-header {
+    position: absolute;
+    top: 1269px;
+    left: 90px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+#reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+
+    width: 936px;
+    border-radius: 10px;
+    height: fit-content;
+
+    padding: 40px 40px 60px 40px;
+    border: 1px solid black;
+
+    /* needed to set review rating to absolute position */
+    position: relative;
+}
+
+.date {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    opacity: .6;
+    line-height: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.review h1 {
+    display: inline-flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0;
+    margin: 32px 0 20px 0;
+}
+
+.review p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.grade {
+    position: absolute;
+    top: -10px;
+    right: 40px;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    width: 72px;
+    height: 93px;
+    background-size: contain;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.grade span.innerText {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.grade span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.grade.positive {
+    background-image: url("/positive-review.png");
+}
+
+.grade.negative {
+    background-image: url("/negative-review.png");
+}
+
+End of Stage 4 */
+
+
+/* Stage 5
+HTML: index.html
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HyperCinema</title>
+</head>
+<body>
+<!-- Header -->
+<div>
+    <h1 id="main-title">Hyper Cinema</h1>
+    <input id="login-button" type="button" value="Login">
+</div>
+<!-- Video section and ... -->
+<video src="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/c0/Big_Buck_Bunny_4K.webm/Big_Buck_Bunny_4K.webm.720p.vp9.webm"
+       alt="Ogre Shrek and princess Fionna sitting and holding hands in the forest at sunset "
+       width="828" height="499"
+       controls="controls"
+       poster="/media/video-poster.svg">
+</video>
+<!-- ... movie description -->
+<div class="movie-description">
+    <div class="movie-description-header">
+        <h2 class="name">Shrek</h2>
+        <p class="rating">6+</p>
+    </div>
+    <p class="sub-info">2001, USA, 1h 30m</p>
+    <p class="description">
+        A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go
+        on a quest and rescue a princess for the lord in order to get his land back.
+    </p>
+    <table>
+        <tbody>
+        <tr>
+            <th>Directors</th>
+            <td>Andrew Adamson, Vicky Jenson</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>Genres</th>
+            <td>Animation, Adventure, Comedy</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>IMDB</th>
+            <td>7.9</td>
+        </tr>
+        <tr class="empty"></tr>
+        <tr>
+            <th>Rotten Tomatoes</th>
+            <td>88</td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="buttons">
+        <button id="trailer-button">Trailer</button>
+        <button id="reviews-button" onclick="window.location.href='#reviews'">Reviews</button>
+    </div>
+</div>
+<!-- Actors section -->
+<section id="actors">
+    <h3 class="section-header">Actors</h3>
+    <div id="actors-list">
+        <article class="actor">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcS2y8p9O466gUqXpbGVZFP3M4yi4lrxT7mhqFdOUMDBvJt_obA0BU_TyPnexzBRgudQaPrHU18&s=19"
+                 alt="photograph of the actor Mike Myers"/>
+            <div>Mike Myers</div>
+        </article>
+        <article class="actor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdGUMeuPFXxDFzmwZulRf2mKWSj6RC7o-hg07GWKeFqtYV77uJsk7LZe4&s=10"
+                 alt="photograph of the actor Eddie Murphy"/>
+            <div>Eddie Murphy</div>
+        </article>
+        <article class="actor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrsky-gU4BVxDxSUB8nmQ-oiZOiwem-xzuTRwUtjVwSsXz1cGGm4CpjGg&s=10"
+                 alt="photograph of the actor Cameron Diaz"/>
+            <div>Cameron Diaz</div>
+        </article>
+        <article class="actor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVOgtNGqwa3LfUrge_oiHa01pnUzoYRvoPP6vSsBytlbdmpvh_MC8tKg&s=10"
+                 alt="photograph of the actor John Lithgow"/>
+            <div>John Lithgow</div>
+        </article>
+        <article class="actor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR388m5HRhXBT5_sM-1HiJGF4uqECsp5948Vj96NPnoRyTPjZcN_HDwjw&s=10"
+                 alt="photograph of the actor Vincent Cassel"/>
+            <div>Vincent Cassel</div>
+        </article>
+        <article class="actor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Andrew_Adamson_%28cropped%29.jpg"
+                 alt="photograph of the actor Andrew Adamson"/>
+            <div>Andrew Adamson</div>
+        </article>
+        <article class="actor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Elisa_Gabrielli_by_Gage_Skidmore.jpg/220px-Elisa_Gabrielli_by_Gage_Skidmore.jpg"
+                 alt="photograph of the actor Elisa Gabrielli"/>
+            <div>Elisa Gabrielli</div>
+        </article>
+    </div>
+</section>
+<!-- Reviews section and Summary section -->
+<p id="reviews" class="section-header">Reviews</p>
+<section class="reviews-section" id="reviews-section">
+    <section class="reviews-list" id="reviews-list">
+        <article class="review">
+            <div class="grade positive">9<span>/10</span></div>
+            <span class="date">21 June 2020</span>
+            <h1>Groundbreaking</h1>
+            <p>
+                For younger viewers, they might not understand the impact of "Shrek" on the film industry and CGI
+                movies.
+                However, being an older guy, I remember how groundbreaking and amazing the computer animation was when
+                the film debuted. It was head and shoulders better than the few CGI movies that had come out in the
+                previous decade...and it finally gave Pixar a serious run for the money. In addition, the plot was very
+                adult...and the film's appeal was much greater than a typical CGI story. Great animation, great story
+                telling and great voice acting, while the movie isn't quite impressive to see today, it still holds up
+                very well and is well worth your time.<br>
+                I could easily say more but this film has over a thousand reviews....so I'll just end it here!
+            </p>
+        </article>
+
+        <article class="review">
+            <div class="grade negative">3<span>/10</span></div>
+            <span class="date">11 May 2021</span>
+            <h1>Not the best movie, also scared some kids</h1>
+            <p>
+                My 3-year-old and my 8-year-old (both sons) and my 12-year-old (daughter) were terrified. True it
+                didn’t show any scary fights or other things. My daughter was fine but she found disturbing memes.
+                My sons found that the scene where shrek hits somebody with a sword while knighting them gave my kids
+                nightmares. I recommend just depends on what the parent thinks.
+                I would say watch it with your kids the first few times. Also, not for young kids because they will
+                have nightmares.
+            </p>
+        </article>
+
+        <article class="review">
+            <div class="grade positive">8<span>/10</span></div>
+            <span class="date">11 May 2009</span>
+            <h1>Original and funny: delightful for kids and adults alike!</h1>
+            <p>
+                I liked the incidental music very much, especially in the escape from the Dragon scene. I wasn't
+                hugely fond of the pop music featured, but putting that minor quibble aside, this was still an original
+                and funny animated film, that will please any animation lover. The animation is faultless, never stiff,
+                and lovely backgrounds. The script is laugh-out-loud funny with the fairytale characters, Gingerbread
+                Man especially, and Robin Hood. The characters are definitely memorable, and the terrific voice cast
+                brings the film to life. Mike Myers voices the ogre with feeling, but it is Eddie Murphy who steals
+                the film. Though Cameron Diaz is lovely as Fiona, and John Lithgow is delightfully villainous
+                as Lord Farquad, though his villain isn't the most memorable villain ever in an animation. The film
+                sparkles with heart and humour, it is impossible not to like it. In conclusion, look out for it,
+                you'll be glad you did! 8/10 Bethany Cox.
+            </p>
+        </article>
+    </section>
+
+    <section class="reviews-summary">
+            <div class="reviews-number">3</div>
+            <div class="caption">total</div>
+            <div class="reviews-number positive">2<span>66,6%</span></div>
+            <div class="caption">positive</div>
+            <div class="reviews-number negative">1<span>33,3%</span></div>
+            <div class="caption">negative</div>
+    </section>
+</section>
+</body>
+</html>
+
+CSS: style.css
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F2EBFF;
+    height: 2776px;
+    width: 1440px;
+    margin: 0;
+    /* border: 1px solid #000000;*/
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#main-title {
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    height: 22px;
+    width: 123px;
+    margin: 20px 0 0 90px;
+    padding: 0;
+}
+
+#login-button {
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 22px;
+    opacity: 0.8;
+    width: 43px;
+    margin: 20px 90px 0 0;
+    padding: 0;
+}
+
+video {
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    height: 499px;
+    width: 828px;
+    margin: 99px 37px 0 90px;
+    padding: 0;
+    float: left;
+}
+
+/* Movie information style */
+.movie-description {
+    display: flex;
+    flex-direction: column;
+    margin: 92px 0 0 0;
+}
+
+.movie-description-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.name {
+    height: 49px;
+    width: 122px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+}
+
+.rating {
+    height: 29px;
+    width: 44px;
+    border: 1px solid #BBB8C0;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    opacity: 1;
+    margin-left: 20px;
+}
+
+.sub-info {
+    height: 17px;
+    width: 124px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: left;
+    opacity: 0.6;
+    vertical-align: top;
+    margin: 0 0 0 0;
+
+}
+
+.description {
+    height: 104px;
+    width: 394px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    opacity: 1;
+    vertical-align: top;
+    margin: 30px 0 15px 0;
+}
+
+/* Table style*/
+table {
+    table-layout: fixed;
+    border: none;
+    font-family: "Inter", "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 170px;
+    width: 350px;
+    margin: 0 0 29px 0;
+}
+
+tr {
+    height: 20px;
+}
+
+tr.empty {
+    height: 20px;
+}
+
+th {
+    width: 100px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+td {
+    width: 250px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+/* Buttons style*/
+div.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 396px;
+}
+
+#trailer-button,
+#reviews-button {
+    border: 1px solid rgb(130, 45, 180);
+    background: rgb(242, 235, 255);
+    border-radius: 8px;
+    height: 50px;
+    width: 180px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(130, 45, 180);
+    text-align: center;
+    vertical-align: top;
+    margin-top: 18px;
+
+    transition: box-shadow 0s ease;
+}
+
+#trailer-button:hover,
+#reviews-button:hover {
+    border: 1px solid rgb(130, 45, 180);
+    background: rgb(130, 45, 180);
+    color: rgb(242, 235, 255);
+
+    box-shadow: -10px 10px 0 0 rgb(33, 33, 33);
+    /*transform: translate(10px, -10px);*/
+    transform: matrix(1, 0, 0, 1, 10, -10);
+
+}
+
+/* Actors section style*/
+section#actors {
+    margin: 170px 0 84px 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    display: block;
+    height: 39px;
+    width: 109px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+#actors-list {
+    display: flex;
+    flex-direction: row;
+    height: 251px;
+    width: 1259px;
+    /*margin: 0 0 0 90px;*/
+    border: none;
+}
+
+#actors-list article {
+    background: #F2EBFF;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 251px;
+    width: 149px;
+
+    transition: box-shadow 0s ease;
+}
+#actors-list article:hover {
+    box-shadow: -10px 10px 0 0 rgb(33, 33, 33);
+    transform: translate(10px, -10px);
+}
+
+article img {
+    width: 147px;
+    height: 209px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+article div {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    justify-self: end;
+    align-self: start;
+    height: 18px;
+    width: max-content;
+    margin: 9px 0 13px 10px;
+
+}
+
+/* Reviews section style*/
+#reviews-section {
+    position: absolute;
+    top: 1348px;
+    left: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+p#reviews.section-header {
+    position: absolute;
+    top: 1269px;
+    left: 90px;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+#reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+
+    width: 936px;
+    border-radius: 10px;
+    height: fit-content;
+
+    padding: 40px 40px 60px 40px;
+    border: 1px solid black;
+
+    /* needed to set review rating to absolute position */
+    position: relative;
+}
+
+.date {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    opacity: .6;
+    line-height: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.review h1 {
+    display: inline-flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0;
+    margin: 32px 0 20px 0;
+}
+
+.review p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.grade {
+    position: absolute;
+    top: -10px;
+    right: 40px;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    width: 72px;
+    height: 93px;
+    background-size: contain;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.grade span.innerText {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.grade span {
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    top: 9px;
+}
+
+.grade.positive {
+    background-image: url("/media/positive-review.png");
+}
+
+.grade.negative {
+    background-image: url("/media/negative-review.png");
+}
+
+/* Summary section style*/
+.reviews-summary {
+    position: sticky;
+    top: 0;
+    height: 261px;
+    padding: 0;
+    border-left: 2px solid rgb(0, 0, 0);
+    min-width: 91px;
+    margin-left: 147px;
+}
+
+.reviews-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    height: 36px;
+    width: 20px;
+    margin: 10px 0 0 16px;
+}
+
+.reviews-number.positive {
+    color: rgb(48, 207, 127);
+    margin: 30px 0 0 16px;
+}
+
+.reviews-number.negative {
+    color: rgb(207, 48, 48);
+    margin: 30px 0 0 16px;
+}
+
+.reviews-number span {
+    font-weight: 400;
+    font-size: 16px;
+    height: 19px;
+    color: rgb(0, 0, 0);
+    opacity: 0.4;
+    vertical-align: text-bottom;
+    margin-left: 7px;
+    position: relative;
+    top: 13px;
+}
+
+.reviews-summary .caption {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    height: 19px;
+    margin: 2px 0 0 16px;
+}
+
+End of Stage 5 */
