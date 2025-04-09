@@ -7,7 +7,7 @@
 
 body {
     background: #F2EBFF;
-    height: 1200px;
+    height: 2776px;
     width: 1440px;
     margin: 0;
     /* border: 1px solid #000000;*/
@@ -186,6 +186,8 @@ div.buttons {
     text-align: center;
     vertical-align: top;
     margin-top: 18px;
+
+    transition: box-shadow 0s ease;
 }
 
 #trailer-button:hover,
@@ -193,6 +195,10 @@ div.buttons {
     border: 1px solid rgb(130, 45, 180);
     background: rgb(130, 45, 180);
     color: rgb(242, 235, 255);
+
+    box-shadow: -10px 10px 0 0 rgb(33, 33, 33);
+    /*transform: translate(10px, -10px);*/
+    transform: matrix(1, 0, 0, 1, 10, -10);
 
 }
 
@@ -215,7 +221,7 @@ section#actors {
     margin-top: 0;
 }
 
-div#actors-list {
+#actors-list {
     display: flex;
     flex-direction: row;
     height: 251px;
@@ -224,7 +230,7 @@ div#actors-list {
     border: none;
 }
 
-article {
+#actors-list article {
     background: #F2EBFF;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
@@ -232,6 +238,12 @@ article {
     flex-direction: column;
     height: 251px;
     width: 149px;
+
+    transition: box-shadow 0s ease;
+}
+#actors-list article:hover {
+    box-shadow: -10px 10px 0 0 rgb(33, 33, 33);
+    transform: translate(10px, -10px);
 }
 
 article img {
@@ -354,13 +366,67 @@ p#reviews.section-header {
 .grade span {
     font-size: 14px;
     font-weight: 300;
+    position: relative;
+    top: 9px;
 }
 
 .grade.positive {
-    background-image: url("/positive-review.png");
+    background-image: url("/media/positive-review.png");
 }
 
 .grade.negative {
-    background-image: url("/negative-review.png");
+    background-image: url("/media/negative-review.png");
 }
 
+/* Summary section style*/
+.reviews-summary {
+    position: sticky;
+    top: 0;
+    height: 261px;
+    padding: 0;
+    border-left: 2px solid rgb(0, 0, 0);
+    min-width: 91px;
+    margin-left: 147px;
+}
+
+.reviews-number {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    height: 36px;
+    width: 20px;
+    margin: 10px 0 0 16px;
+}
+
+.reviews-number.positive {
+    color: rgb(48, 207, 127);
+    margin: 30px 0 0 16px;
+}
+
+.reviews-number.negative {
+    color: rgb(207, 48, 48);
+    margin: 30px 0 0 16px;
+}
+
+.reviews-number span {
+    font-weight: 400;
+    font-size: 16px;
+    height: 19px;
+    color: rgb(0, 0, 0);
+    opacity: 0.4;
+    vertical-align: text-bottom;
+    margin-left: 7px;
+    position: relative;
+    top: 13px;
+}
+
+.reviews-summary .caption {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    height: 19px;
+    margin: 2px 0 0 16px;
+}
